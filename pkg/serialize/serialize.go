@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anticycle/anticycle/pkg/model"
+	"github.com/Runninginsilence1/anticycle/pkg/model"
 )
 
 // ToJSON takes cycle analysis and produces JSON string.

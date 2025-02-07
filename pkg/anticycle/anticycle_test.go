@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/anticycle/anticycle/pkg/model"
+	"github.com/Runninginsilence1/anticycle/pkg/model"
 	"github.com/stretchr/testify/assert"
 )
 

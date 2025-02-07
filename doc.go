@@ -20,7 +20,7 @@ package anticycle
 
 // Imports for godoc to follow packages
 import (
-	_ "github.com/anticycle/anticycle/pkg/anticycle" // golint:nocheck
-	_ "github.com/anticycle/anticycle/pkg/model"     // golint:nocheck
-	_ "github.com/anticycle/anticycle/pkg/serialize" // golint:nocheck
+	_ "github.com/Runninginsilence1/anticycle/pkg/anticycle" // golint:nocheck
+	_ "github.com/Runninginsilence1/anticycle/pkg/model"     // golint:nocheck
+	_ "github.com/Runninginsilence1/anticycle/pkg/serialize" // golint:nocheck
 )

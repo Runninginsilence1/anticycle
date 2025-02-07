@@ -14,8 +14,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/anticycle/anticycle/pkg/anticycle"
-	"github.com/anticycle/anticycle/pkg/serialize"
+	"github.com/Runninginsilence1/anticycle/pkg/anticycle"
+	"github.com/Runninginsilence1/anticycle/pkg/serialize"
 )
 
 var version = "undefined"
@@ -23,9 +23,9 @@ var build = "undefined"
 
 const helpText = `Usage: anticycle [options] [directory]
 
-  Anticycle is a tool for static code analysis which search for 
-  dependency cycles. It scans recursively all source files and 
-  parses theirs dependencies. Anticycle does not compile the code, 
+  Anticycle is a tool for static code analysis which search for
+  dependency cycles. It scans recursively all source files and
+  parses theirs dependencies. Anticycle does not compile the code,
   so it is ideal for searching for complex, difficult to debug cycles.
 
 Options:
@@ -33,10 +33,10 @@ Options:
 
   -format="text"       Output format. Available: text, json.
 
-  -exclude=""          A space-separated list of directories that should 
-                       not be scanned. The list will be added to the 
+  -exclude=""          A space-separated list of directories that should
+                       not be scanned. The list will be added to the
                        default list of directories.
-  -excludeDefault=""   A space-separated list of directories that should 
+  -excludeDefault=""   A space-separated list of directories that should
                        not be scanned. The list will override the default.
   -showExcluded        Shows list of excluded directories.
 
@@ -44,25 +44,25 @@ Options:
   -version             Shows version and build hash.
 
 Directory:
-  An optional path to the analyzed project. If the directory is not 
+  An optional path to the analyzed project. If the directory is not
   defined, the current working directory will be used.
 
 Output:
   The output of the Anticycle is a text by default with human friendly
   format of cycle affected package, import and filename.
-  
+
   You can specify json format with -format=json flag.
-  The JSON contains package names, 
-  all dependencies in the package, a list of files belonging to 
+  The JSON contains package names,
+  all dependencies in the package, a list of files belonging to
   the package and their individual dependencies.
 
   By default output will contain only cycles to reduce a clutter.
   If you want to print all packages you can use -all flag.
 
-  If Anticycle does not find any source files, it will exit 
+  If Anticycle does not find any source files, it will exit
   with code 0 without output in text format,
   or with empty structure in JSON format.
-  In case of error, the program will exit with code 1, and the error 
+  In case of error, the program will exit with code 1, and the error
   message will be sent to stderr.`
 
 func trap(err error) {

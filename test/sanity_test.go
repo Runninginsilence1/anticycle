@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anticycle/anticycle/pkg/anticycle"
+	"github.com/Runninginsilence1/anticycle/pkg/anticycle"
 	"github.com/stretchr/testify/assert"
 )
 

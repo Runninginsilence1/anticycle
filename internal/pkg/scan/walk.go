@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/anticycle/anticycle/pkg/model"
+	"github.com/Runninginsilence1/anticycle/pkg/model"
 )
 
 func shouldSkip(pathName string, excluded []string) bool {

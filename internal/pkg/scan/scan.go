@@ -7,7 +7,7 @@ package scan
 import (
 	"strings"
 
-	"github.com/anticycle/anticycle/pkg/model"
+	"github.com/Runninginsilence1/anticycle/pkg/model"
 )
 
 // FetchPackages walks recursively given directory skipping excluded directories

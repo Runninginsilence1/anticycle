@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anticycle/anticycle/internal/pkg/scan"
-	"github.com/anticycle/anticycle/pkg/model"
+	"github.com/Runninginsilence1/anticycle/internal/pkg/scan"
+	"github.com/Runninginsilence1/anticycle/pkg/model"
 )
 
 // DefaultExcluded is a default list of directories which should be skipped while analyzing.
